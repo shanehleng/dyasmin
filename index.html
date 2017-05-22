@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>My Biography</title>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+
+			@font-face{
+			  font-family: 'bromello';
+			  src: url('fonts/bromello.otf');
+			}
+
+			@font-face{
+			  font-family: 'Mayton';
+			  src: url('fonts/Mayton.otf');
+			}
+
+			@font-face{
+			  font-family: 'Simplifica';
+			  src: url('fonts/SIMPLIFICA Typeface.ttf');
+			}
+
+			@font-face{
+			  font-family: 'Remachine Script Personal Use';
+			  src: url('fonts/RemachineScript_Personal_Use.ttf');
+			}
+
+
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			body {
+				background-color: #f3f4ef;
+			}
+
+			.container {
+				width: 1000px;
+				height: 794px;
+				margin: 0 auto;
+				/*border: 1px solid #000;*/
+				background-image: url('img/flowerbg2.png');
+			}
+
+			h1.title {
+				position: absolute;
+				font-family: 'bromello';
+				color: #444;
+				font-size: 110px;
+				margin-top: 370px;
+				margin-left: 85px;
+				z-index: 100;
+				text-shadow: 4px 4px #fff;
+				/*background-color: #fff;*/
+
+			}
+
+			.container_box {
+				width: 574px;
+				height: 339px;
+				/*border: 1px solid #000;*/
+				margin-top: 273px;
+				margin-left: 224px;
+				position: absolute;
+				background-color: #fff;
+				box-shadow: 2px 4px 8px #333;
+				/*padding: 50px;*/
+			}
+
+			.box_dashed {
+				border: 5px dashed #e0c195;
+				width: 500px;
+				height: 265px;
+				margin: 33px auto;
+			}
+
+			hr.section {
+				border: 1px solid #444;
+				width: 90%;
+				margin: 0 auto;
+				margin-top: 10px;
+			}
+
+			.xxx {
+				font-family: 'Simplifica';
+				font-size: 40px;
+				font-weight: bold;
+				padding: 15px;
+				background-color: #f3f4ef;
+				letter-spacing: 5px;
+				margin-left: 630px;
+				margin-top: -40px;
+				display: inline;
+				position: absolute;
+			}
+
+			.pinfo {
+				width: 85%;
+				height: 30px;
+				font-family: 'Simplifica';
+				background-color: #444;
+				margin: 0 auto;
+				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				text-align: center;
+				font-size: 30px;
+				padding: 10px;
+				clear: both;
+			}
+
+			hr.bottom {
+				width: 86%;
+				border: 1px solid #444;
+				margin: 0 auto;
+				margin-top: 5px;
+			}
+			
+			.photo {
+				width: 300px;
+				height: 401px;
+				margin: 0 auto;
+				margin-top: 20px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+			}
+
+			.photo:hover {
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			}
+
+			.col1, .col2 {
+				width: 421px;
+				height: 400px;
+				/*border: 1px solid #000;*/
+				float: left;
+				position: absolute;
+				margin-top: -401px;
+				margin-left: 90px;
+				background-image: url('img/pink2.png');
+			}
+
+			.col2 {
+				margin-left: 838px;
+			}
+
+			h2.name {
+				font-family: 'Mayton';
+				font-size: 40px;
+				/*color: rgba(242, 176, 177, 1);*/
+				color: #444;
+				/*display: inline;*/
+				text-align: center;
+				margin-top: 30px;
+			}
+
+			h3.subname {
+				font-family: 'Simplifica';
+				font-size: 30px;
+				/*color: rgba(159, 197, 136, 1);*/
+				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				padding: 0 5px;
+				/*display: inline;*/
+				text-align: center;
+				margin-bottom: 30px;
+			}
+
+			.insta {
+				width: 300px;
+				height: 202px;
+				margin-left: 190px;
+				/*border: 1px solid #000;*/
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+				opacity: 0.8;
+			}
+
+			.insta:hover {
+				opacity: 1;
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			}
+
+			.hide {
+				width: 300px;
+				height: 300px;
+				margin-left: 190px;
+				/*border: 1px solid #000;*/
+				margin-top: 10px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+				opacity: 0.8;
+			}
+
+			.hide:hover {
+				opacity: 1;
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			}
+
+			.center {
+				width: 341px;
+				height: 512px;
+				position: absolute;
+				margin-left: 30px;
+				/*border: 1px solid black;*/
+				margin-top: -512px;
+				margin-left: 505px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+			}
+
+			.center > img {
+				opacity: 0.4;
+			}
+
+			.center:hover {
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			}
+
+			.hide2 {
+				width: 300px;
+				height: 300px;
+				margin-left: 860px;
+				margin-top: -512px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+				position: absolute;
+				opacity: 0.8;
+			}
+
+			.hide2:hover {
+				opacity: 1;
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			}
+
+			.insta2 {
+				width: 300px;
+				height: 202px;
+				margin-left: 860px;
+				/*border: 1px solid #000;*/
+				margin-top: -202px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+				position: absolute;
+				opacity: 0.8;
+			}
+
+			.insta2:hover {
+				opacity: 1;
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			}
+
+			.border {
+				width: 291px;
+				height: 462px;
+				border: 1px solid #000;
+				position: absolute;
+				margin-top: -502px;
+				margin-left: 15px;
+				text-align: center;
+				font-family: "Simplifica";
+				font-size: 28px;
+				color: #000;
+				font-weight: bold;
+				text-transform: uppercase;
+				padding: 10px;
+
+			}
+
+			.dashing, .dashing1 {
+				width: 260px;
+				height: 160px;
+				border: 2px dashed #444;
+				float: left;
+				margin-right: 60px;
+				margin-top: 50px;
+				margin-bottom: 80px;
+				padding: 20px;
+				transition: 0.4s all ease-in;
+
+			}
+
+			.dashing1 {
+				margin-left: 160px;
+			}
+
+			.dashing:hover, .dashing1:hover {
+				border: 2px solid #000;
+				background-color: #000;
+				color: #fff;
+				transition: 0.4s all ease-in;
+			}
+
+			.dashing:hover h6.state, .dashing1:hover h6.state {
+				color: #fff;
+				transition: 0.4s all ease-in;
+			}
+
+			h6.state {
+				font-family: 'Arial Narrow';
+				font-size: 16px;
+				text-align: center;
+				margin-top: 35px;
+				color: #666;
+			}
+
+			h5.state {
+				font-family: 'Simplifica';
+				font-size: 30px;
+				text-align: center;
+				text-transform: uppercase;
+				margin-top: 10px;
+				letter-spacing: 8px;
+			}
+
+			h6.state2 {
+				font-family: 'Simplifica';
+				font-size: 25px;
+				text-align: center;
+				margin-top: 10px;
+				text-transform: uppercase;
+				color: #b2698d;
+				letter-spacing: 5px;
+			}
+
+			.gal1, .gal {
+				width: 350px;
+				height: 350px;
+				/*border: 1px solid black;*/
+				float: left;
+				margin-top: 50px;
+				margin-right: 30px;
+				margin-bottom: 30px;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+				margin-bottom: 60px;
+			}
+
+			.gal1 {
+				margin-left: 115px;
+			}
+
+			.gal > img {
+				margin-top: 40px;
+			}
+
+			.gal > img.b {
+				margin-top: 25px;
+			}
+
+			.gal > img.c {
+				margin-top: 0px;
+				margin-left: 44px;
+			}
+
+			.label, .label2 {
+				/*position: absolute;*/
+				display: block;	
+				margin-top: -205px;
+				z-index: 100;
+				text-align: center;
+				visibility: hidden;
+				font-family: 'Remachine Script Personal Use';
+				font-size: 60px;
+				color: #fff;
+				/*background-color: #444;*/
+				transition: 0.5s all ease-in;
+			}
+
+			.label2 {
+				margin-top: -170px;
+			}
+
+			.gal1:hover .label, .gal1:hover .label2, .gal:hover .label, .gal:hover .label2 {
+				visibility: visible;
+				transition: 0.5s all ease-in;
+			}
+
+			.gal1:hover, .gal:hover {
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			}
+
+			.pre {
+		
+			}
+
+		</style>
+	</head>
+	<body>
+
+	<div class="container">
+		<h1 class="title">dyasmin's biography</h1>
+		<div class="container_box">
+			<div class="box_dashed"></div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<hr class="section" />
+	<div class="xxx">xxx</div>
+
+	<br><br><br><br><br>
+
+	<div class="pinfo">
+		Personal Information
+	</div>
+	<hr class="bottom" />
+
+	<div title="Me @ PUP" class="photo">
+		<img class="img" src="img/dp.jpg" width="300px" height="401px" />
+	</div>
+
+	<div class="col1">
+		<h2 class="name">Dyasmin M. Mendoza</h2>
+		<h3 class="subname">- Name -</h3>
+
+		<h2 class="name">Dyas/Min</h2>
+		<h3 class="subname">- Nickname -</h3>
+
+		<h2 class="name">18 years old</h2>
+		<h3 class="subname">- Age -</h3>
+	</div>
+
+	<div class="col2">
+		<h2 class="name">September 18, 1998</h2>
+		<h3 class="subname">- Birthday -</h3>
+
+		<h2 class="name">Virgo</h2>
+		<h3 class="subname">- Zodiac Sign -</h3>
+
+		<h2 class="name">Tiger</h2>
+		<h3 class="subname">- Chinese Zodiac -</h3>
+	</div>
+
+	<br><br>
+
+	<div title="Tulips" class="insta">
+		<img src="img/tul2.jpg" height="202px" width="300px" />
+	</div>
+
+	<div title="Girl with Flower Crown" class="hide">
+		<img src="img/hide2.jpg" height="300px" width="300px" />
+	</div>
+
+	<div class="center">
+		<img src="img/girl.jpg" height="512px" width="341px" />
+		<div class="border"><br><br><br><br><br><br>"What you think of yourself is much more important than what others think of you."</div>
+	</div>
+
+	<div title="Pink and Black Roses" class="hide2">
+		<img src="img/pick.jpg" height="300px" width="300px" />
+	</div>
+
+	<div title="Leaves" class="insta2">
+		<img src="img/vines.jpg" height="202px" width="300px" />
+	</div>
+
+	<br><br><br>
+
+	<div class="pinfo">
+		Other Information 
+	</div>
+	<hr class="bottom" />
+
+	<div class="dashing1">
+		<h6 class="state">My favorite colors are</h6>
+		<h5 class="state">Black & White</h5>
+		<h6 class="state2">Favorite</h6>
+	</div>
+
+	<div class="dashing">
+		<h6 class="state">I interest in</h6>
+		<h5 class="state">Motorcycling</h5>
+		<h6 class="state2">Hobby</h6>
+	</div>
+
+	<div class="dashing">
+		<h6 class="state">I am good at</h6>
+		<h5 class="state">Dancing</h5>
+		<h6 class="state2">Talent</h6>
+	</div>
+
+	<div class="pinfo">
+		 Gallery
+	</div>
+	<hr class="bottom" />
+
+	<div class="gal1">
+		<img src="img/pic1.jpg" height="350px" width="350px" />
+		<div class="label">the next housemate</div>
+	</div>
+	<div class="gal">
+		<img class="c" src="img/pic6.jpg" height="350px" width="262px" />
+		<div class="label">selfie</div>
+
+	</div>
+	<div class="gal">
+		<img class="b" src="img/pic3.jpg" height="302px" width="350px" />
+		<div class="label">mendoza family</div>
+	</div>
+
+	<div class="gal1">
+		<img src="img/pic4.jpg" height="350px" width="350px" />
+		<div class="label">bestfriends</div>
+	</div>
+	<div class="gal">
+		<img src="img/pic2.jpg" height="262px" width="350px" />
+		<div class="label2">the squad</div>
+
+	</div>
+	<div class="gal">
+		<img src="img/pic5.jpg" height="262px" width="350px" />
+		<div class="label2">squadgoals:lunch</div>
+	</div>
+
+	<hr class="section" />
+	<div class="xxx">xxx</div>
+
+	</body>
+</html> 
